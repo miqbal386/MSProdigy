@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/MSProdigy/static/css/main.115d38f7.chunk.css",
+    "main.js": "/MSProdigy/static/js/main.7f4fd986.chunk.js",
+    "main.js.map": "/MSProdigy/static/js/main.7f4fd986.chunk.js.map",
+    "runtime-main.js": "/MSProdigy/static/js/runtime-main.6f4907a9.js",
+    "runtime-main.js.map": "/MSProdigy/static/js/runtime-main.6f4907a9.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/MSProdigy/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.615e7d7e.chunk.js": "/MSProdigy/static/js/2.615e7d7e.chunk.js",
+    "static/js/2.615e7d7e.chunk.js.map": "/MSProdigy/static/js/2.615e7d7e.chunk.js.map",
+    "index.html": "/MSProdigy/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/MSProdigy/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.115d38f7.chunk.css.map": "/MSProdigy/static/css/main.115d38f7.chunk.css.map",
+    "static/js/2.615e7d7e.chunk.js.LICENSE.txt": "/MSProdigy/static/js/2.615e7d7e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f4907a9.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.615e7d7e.chunk.js",
+    "static/css/main.115d38f7.chunk.css",
+    "static/js/main.7f4fd986.chunk.js"
+  ]
+}
