@@ -7,6 +7,11 @@ import Login from "./components/login.component";
 import SignUp from "./components/signup.component";
 import Company from "./components/Company";
 import Network from "./components/Networking";
+import BDR from "./components/BDR";
+import AntiVirus from "./components/Anti-Virus";
+import RMM from "./components/RMM";
+import EmailProtection from "./components/EmailProtection";
+import Tutorial from "./components/tutorial";
 
 function App() {
   return (<Router>
@@ -26,15 +31,25 @@ function App() {
           </div>
         </div>
       </nav>
+     
 
       <div className="auth-wrapper">
+       
         <div className="auth-inner">
+        <Link className="navbar-brand App container" to={"/sign-in"}>MSProdigy</Link>
+        <p className="App">Logo</p>
+        <br></br>
           <Switch>
             <Route exact path='/' component={Login} />
             <Route path="/sign-in" component={Login} />
             <Route path="/sign-up" component={SignUp} />
             <Route path="/Company" component={Company} />
             <Route path="/Network" component={Network} />
+            <Route path="/BDR" component={BDR} />
+            <Route path="/AntiVirus" component={AntiVirus} />
+            <Route path="/RMM" component={RMM} />
+            <Route path="/EmailProtection" component={EmailProtection} />
+            <Route path="/Tutorial" component={Tutorial} />
           </Switch>
         </div>
       </div>

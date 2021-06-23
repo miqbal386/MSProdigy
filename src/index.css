@@ -3,16 +3,7 @@
 * {
   box-sizing: border-box;
 }
-body {
-  overflow-y: scroll;
-  height:auto;
-  width:"auto";
-  background: #1c8ef959 !important;
-  min-height: 100vh;
-  display: flex;
-  font-weight: 400;
-  font-family: 'Fira Sans', sans-serif;
-}
+
 
 h1,h2,h3,h4,h5,h6,label,span {
   font-weight: 500;
@@ -62,6 +53,13 @@ body, html, .App, #root, .auth-wrapper {
   font-weight: 400;
 }
 
+.SignUp{
+  border:"100px";
+  padding: 100px;
+  margin: auto;
+  height: 100%;
+}
+
 .forgot-password,
 .forgot-password a {
   text-align: right;
@@ -79,3 +77,24 @@ body, html, .App, #root, .auth-wrapper {
   data-mdb-perfect-scrollbar:'true';
 }
 
+/* style all input elements with a required attribute */
+input:required {
+  box-shadow: 4px 4px 20px rgba(200, 0, 0, 0.85);
+}
+
+/**
+ * style input elements that have a required
+ * attribute and a focus state
+ */
+input:required:focus {
+  border: 1px solid red;
+  outline: none;
+}
+
+/**
+ * style input elements that have a required
+ * attribute and a hover state
+ */
+input:required:hover {
+  opacity: 1;
+}

@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 export default class SignUp extends Component {
     render() {
         return (
-            <form>
+            <form ClassName="SignUp">
                 <h3>Register</h3>
                 
                 <h5>Personal Details</h5>

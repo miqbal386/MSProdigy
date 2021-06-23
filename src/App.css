@@ -2,6 +2,20 @@
   text-align: center;
 }
 
+body {
+  border: 10px;
+  margin: 10px;
+  padding: 130px;
+  overflow-y: scroll;
+  height:auto;
+  width:"auto";
+  background: #1c8ef959 !important;
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
