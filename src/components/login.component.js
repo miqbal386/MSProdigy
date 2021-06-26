@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import SignUp from "./signup.component";
+import { BrowserRouter as Switch, Route, Link } from "react-router-dom";
+
 import Network from "./Networking";
 
 export default class Login extends Component {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BrowserRouter as Switch, Route, Link } from "react-router-dom";
 import EmailProtection from "./EmailProtection";
-import Tutorial from "./tutorial";
+
 
 export default function RMM() {
   const [isChecked, setIsChecked] = useState(false);

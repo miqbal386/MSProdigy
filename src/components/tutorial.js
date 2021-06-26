@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Login from "./login.component";
-import { BrowserRouter as Switch, Route, Link } from "react-router-dom";
+
 export default class Tutorial extends Component {
     render() {
         return (

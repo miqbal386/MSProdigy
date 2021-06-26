@@ -11,10 +11,12 @@ import BDR from "./components/BDR";
 import AntiVirus from "./components/Anti-Virus";
 import RMM from "./components/RMM";
 import EmailProtection from "./components/EmailProtection";
+import MatchCustomers from "./components/MatchCustomers";
 import Tutorial from "./components/tutorial";
 
 function App() {
   return (<Router>
+     
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-light fixed-top">
         <div className="container">
@@ -49,6 +51,7 @@ function App() {
             <Route path="/AntiVirus" component={AntiVirus} />
             <Route path="/RMM" component={RMM} />
             <Route path="/EmailProtection" component={EmailProtection} />
+            <Route path="/MatchCustomers" component={MatchCustomers} />
             <Route path="/Tutorial" component={Tutorial} />
           </Switch>
         </div>

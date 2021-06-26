@@ -1,12 +1,18 @@
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import { BrowserRouter as Switch, Route, Link } from "react-router-dom";
 import AntiVirus from "./Anti-Virus";
 import Tutorial from "./tutorial";
+import MatchCustomers from "./MatchCustomers";
+import { BookProvider } from "./context";
+
+
 
 export default function EmailProtection() {
   const [isChecked, setIsChecked] = useState(false);
   const [isChecked1, setIsChecked1] = useState(false);
   const [isChecked2, setIsChecked2] = useState(false);
+  const showAuthors = isChecked;
+  
 
   const handleOnChange = () => {
     setIsChecked(!isChecked);
@@ -37,13 +43,19 @@ export default function EmailProtection() {
           />
           Proofpoint
         </div>
+        <BookProvider value={{showAuthors :'Proofpoint'}}>
         <div className="form-group">
           {isChecked ? (
+          <div>
             <input type="textarea" className="form-control" placeholder="Enter API" required></input>
-          ) : (
+           
+          </div> )
+             :
+              (
             ""
           )}
         </div>
+        </BookProvider>
       </div>
 
       <div className="form-group">
@@ -93,7 +105,7 @@ export default function EmailProtection() {
       <div className="result">
         {isChecked | isChecked1 | isChecked2 ? (
           <button type="button" className="btn btn-primary btn-block">
-            SKIP
+             <Link  to={"/MatchCustomers"}><b style={{ color: 'blue'}}>NEXT</b></Link>
           </button>
         ) : (
           ""
@@ -103,14 +115,15 @@ export default function EmailProtection() {
       <div className="result">
         {!isChecked & !isChecked1 & !isChecked2 ? (
           <button type="button" className="btn btn-primary btn-block">
-           NEXT
+           <Link  to={"/MatchCustomers"}><b style={{ color: 'white'}}>SKIP</b></Link>
           </button>
         ) : (
           ""
         )}
       </div>
       <Link  to={"/Tutorial"}><b style={{ color: 'blue'}}>Help</b></Link>
-
+      
+      
 
      
     </div>
